@@ -1,0 +1,35 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="color: white;">Consulta Simples de SMS</h3>
+    </div>
+    <div class="panel-body">
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                Id da Mensagem:
+                <input type="text" name="messageId" ng-model="messageId" />
+            </div>
+            <div class="col-md-4">
+                <input type="button"
+                       value="Buscar"
+                       class="btn btn-success"
+                       ng-click="getSmsStatus()"/>
+                <input type="button"
+                       value="Limpar"
+                       class="btn btn-default"
+                       ng-click="clean()"/>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea name="msgResponse"
+                          ng-model="msgResponse"
+                          rows="10"
+                          style="width: 100%; background-color: transparent">
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+</div>

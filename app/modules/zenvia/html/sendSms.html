@@ -1,0 +1,62 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="color: white;">Envio Simples de SMS</h3>
+    </div>
+    <div class="panel-body">
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                Mensagem:
+                <br>
+                <textarea name="msg" ng-model="msg"></textarea>
+            </div>
+            <div class="col-md-4">
+                Remetente:
+                <input type="text" name="from" ng-model="from" />
+            </div>
+            <div class="col-md-3">
+                Celular:
+                <input type="text" name="to" ng-model="mobile" placeholder="55XX99999999"/>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                Id da Mensagem:
+                <input type="text" name="messageId" ng-model="messageId" />
+            </div>
+            <div class="col-md-4">
+                Id do Agrupador:
+                <input type="text" name="aggregateId" ng-model="aggregateId" />
+            </div>
+            <div class="col-md-4">
+                Data de agendamento:
+                <input type="date" name="schedule" ng-model="schedule"/>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                Opções de callback:
+                <select name="callbackOption" ng-model="callbackOption">
+                    <option value="NONE" selected="selected">Inativo</option>
+                    <option value="FINAL">Somente status final da mensagem</option>
+                    <option value="ALL">Status intermediário e final da mensagem</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="button"
+                       value="Enviar"
+                       class="btn btn-success"
+                       ng-click="sendSms()"/>
+                <input type="button"
+                       value="Limpar"
+                       class="btn btn-default"
+                       ng-click="clean()"/>
+            </div>
+        </div>
+    </div>
+</div>

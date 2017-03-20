@@ -1,0 +1,47 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="color: white;">Envio Múltiplo de SMS</h3>
+    </div>
+    <div class="panel-body">
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                Id do Agrupador:
+                <input type="text" name="aggregateId" ng-model="aggregateId" />
+            </div>
+            <div class="col-md-6">
+                Layout:
+                <select name="layout" ng-model="layout">
+                    <option value="A">A - destino;mensagem</option>
+                    <option value="B">B - destino;mensagem;origem</option>
+                    <option value="C">C - destino;mensagem;id</option>
+                    <option value="D">D - destino;mensagem;id;origem</option>
+                    <option value="E">E - destino;mensagem;id;origem;data de agendamento</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea name="list"
+                          ng-model="list"
+                          rows="10"
+                          style="width: 100%; background-color: transparent">
+                </textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="button"
+                       value="Enviar"
+                       class="btn btn-success"
+                       ng-click="sendMultipleSms()"/>
+                <input type="button"
+                       value="Limpar"
+                       class="btn btn-default"
+                       ng-click="clean()"/>
+            </div>
+        </div>
+    </div>
+</div>

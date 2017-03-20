@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="color: white;">Consulta de SMS Recebidos</h3>
+    </div>
+    <div class="panel-body">
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="button"
+                       value="Listar"
+                       class="btn btn-success"
+                       ng-click="listUnreadMessages()"/>
+                <input type="button"
+                       value="Limpar"
+                       class="btn btn-default"
+                       ng-click="clean()"/>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <textarea name="unredMsg"
+                          ng-model="unredMsg"
+                          rows="10"
+                          style="width: 100%; background-color: transparent">
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+</div>

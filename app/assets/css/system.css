@@ -1,0 +1,91 @@
+html, body{
+    font-family:'Montserrat-Regular';
+    font-size: 100%;
+    background:#F3F3F4;
+    overflow-x: hidden;
+}
+@font-face{
+    font-family:'Montserrat-Regular';
+    src:url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'Muli-Regular';
+    src:url(../fonts/Muli-Regular.ttf) format('truetype');
+}
+
+/*--form--*/
+.grid-form {
+    padding: 1em;
+    margin-top: 5%;
+    width: 100%;
+}
+.grid-form1 {
+    background: #fff;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ebeff6;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.grid-form1:last-child {
+    margin-bottom: 0em;
+}
+.grid-form1 h3{
+    color: #000;
+    font-size:2em;
+    margin-bottom: 1em;
+}
+.grid-form1 form {
+    margin: 1.5em 0;
+}
+
+/*--footer--*/
+.copy-right {
+    padding-top: 5em;
+    text-align: center;
+}
+.copy{
+    background:#F3F3F4;
+    text-align:center;
+    padding:1.5em 0;
+}
+.copy p, .copy-right p{
+    font-size:0.85em;
+    color:#555;
+}
+.copy p a, .copy-right p a{
+    color:#000;
+}
+
+.navTop {
+    background-color: #043851;
+}
+
+.btnSend {
+    background-color: #A4C139;
+}
+
+.btnSubmit {
+    color: #fff;
+    background-color: #F84A0D;
+}
+
+.btnEdit:hover {
+    background-color: #A4C139;
+}
+
+.btnRemove:hover {
+    background-color: #c15639;
+}
+
+.btnSubmit:hover, .btnSubmit:link,
+.btnSubmit:visited, .btnSubmit:focus,
+.btnSubmit:active {
+    color: #fff;
+    background-color: #cc3906;
+}
