@@ -111,7 +111,6 @@
                         return promise;
                     },
                     cancelSms: function(message){
-                        alert(env.zenviaUrl + '/cancel-sms/' +  message.messageId);
                         var promise = $http({
                             method: 'POST',
                             url: env.zenviaUrl + '/cancel-sms/' +  message.messageId,
